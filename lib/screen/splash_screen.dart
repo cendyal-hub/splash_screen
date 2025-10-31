@@ -12,10 +12,11 @@ class SplashScreen extends StatelessWidget {
           // karena akan membuat multiple widget
           // maka membuat children yang bisa menampung banyak
           children: [
+            Spacer(),
             SizedBox(height: 50),
             Container(
-              width: 240,
-              height: 240,
+              width: 230,
+              height: 230,
               // membuat Image bulat
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
@@ -50,7 +51,7 @@ class SplashScreen extends StatelessWidget {
                   width: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.green,
+                    color: Colors.grey,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -59,7 +60,7 @@ class SplashScreen extends StatelessWidget {
                   width: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: const Color.fromARGB(255, 69, 173, 73),
+                    color: Colors.grey,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -68,11 +69,36 @@ class SplashScreen extends StatelessWidget {
                   width: 10,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: const Color.fromARGB(255, 69, 173, 73),
+                    color: Colors.grey,
                   ),
                 ),
               ],
             ),
+            SizedBox(height: 20),
+            Container(
+              margin: const EdgeInsets.only(left: 20, right: 20),
+              child: SizedBox(
+                height: 40,
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    //Todo call next pages
+                    
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                  ),
+                  child: Text("Continue", 
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.amber
+                      ), 
+                      ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 40)
             // widget "children"
             // Membuat Title dengan warna hitam
             // Membuat subtitle
