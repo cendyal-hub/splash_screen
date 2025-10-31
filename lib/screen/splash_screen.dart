@@ -18,7 +18,12 @@ class SplashScreen extends StatelessWidget {
             height: 250,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.cyan),
+              color: Colors.cyan,
+              image: DecorationImage(
+                image: AssetImage("assets/images/image1.png"),
+                fit: BoxFit.cover,
+              )
+              ),
           )
         // widget "children"
         // membuat Image bulat
